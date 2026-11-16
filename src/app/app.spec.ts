@@ -3,21 +3,21 @@ import { App } from './app';
 
 describe('App', () => {
   beforeEach(async () => {
-    await TestBed.configureTestingModule({
-      imports: [App],
-    }).compileComponents();
+    await TestBed.configureTestingModule({ imports: [App] }).compileComponents();
   });
 
   it('should create the app', () => {
     const fixture = TestBed.createComponent(App);
-    const app = fixture.componentInstance;
-    expect(app).toBeTruthy();
+    expect(fixture.componentInstance).toBeTruthy();
   });
 
-  it('should render title', async () => {
+  it('should render header, home, list-conf and footer', async () => {
     const fixture = TestBed.createComponent(App);
     await fixture.whenStable();
-    const compiled = fixture.nativeElement as HTMLElement;
-    expect(compiled.querySelector('h1')?.textContent).toContain('Hello, Projet');
+    const el = fixture.nativeElement as HTMLElement;
+    expect(el.querySelector('app-header')).toBeTruthy();
+    expect(el.querySelector('app-home')).toBeTruthy();
+    expect(el.querySelector('app-list-conf')).toBeTruthy();
+    expect(el.querySelector('app-footer')).toBeTruthy();
   });
 });

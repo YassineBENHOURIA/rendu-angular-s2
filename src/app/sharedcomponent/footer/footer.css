@@ -1,0 +1,34 @@
+.footer {
+  background: #232a34;
+  padding: 3rem 0 2rem;
+}
+.footer_menu a {
+  color: #fff;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+.footer_menu a:hover {
+  color: #9b8fe0;
+}
+.footer_profile a {
+  display: block;
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  border-radius: 50%;
+  background: #554c86;
+  color: #fff;
+  text-decoration: none;
+  transition: transform 0.3s, background 0.3s;
+}
+.footer_profile a:hover {
+  background: #6b60a8;
+  transform: translateY(-3px);
+}
+.footer_copyright {
+  text-transform: uppercase;
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 0.05em;
+  color: #adb5bd;
+}

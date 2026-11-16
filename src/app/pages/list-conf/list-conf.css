@@ -1,0 +1,17 @@
+.conf-card {
+  border-radius: 1rem;
+  overflow: hidden;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+.conf-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.15) !important;
+}
+.conf-img {
+  height: 200px;
+  object-fit: cover;
+  background: #e9ecef;
+}
+.text-brand {
+  color: #554c86;
+}

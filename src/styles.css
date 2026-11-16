@@ -1,1 +1,26 @@
-/* You can add global styles to this file, and also import other style files */
+@import 'bootstrap/dist/css/bootstrap.min.css';
+@import 'bootstrap-icons/font/bootstrap-icons.css';
+
+:root {
+  --bs-primary: #554c86;
+  --bs-primary-rgb: 85, 76, 134;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: #f8f9fa;
+}
+
+.btn-primary {
+  --bs-btn-bg: #554c86;
+  --bs-btn-border-color: #554c86;
+  --bs-btn-hover-bg: #463e72;
+  --bs-btn-hover-border-color: #463e72;
+  --bs-btn-active-bg: #3b3461;
+  --bs-btn-active-border-color: #3b3461;
+  --bs-btn-disabled-bg: #554c86;
+  --bs-btn-disabled-border-color: #554c86;
+}
